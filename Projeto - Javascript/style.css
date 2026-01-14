@@ -1,0 +1,160 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2, h3 {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.lista {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  width: 90%;
+  max-width: 500px;
+  transition: transform 0.2s;
+}
+
+.lista:hover {
+  transform: translateY(-2px);
+}
+
+.input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-area:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+.btnAdicionar {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btnAdicionar:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.menu {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.menu li {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.menu li.completed {
+  background-color: #d4edda;
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.menu li:hover {
+  background-color: #e2e6ea;
+  transform: translateX(2px);
+}
+
+.container-counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#btnExcluir {
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#btnExcluir:hover {
+  background-color: #a71d2a;
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.feito {
+  font-weight: 500;
+  color: #555;
+}
+
+.autor {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+@media (max-width: 600px) {
+  .lista {
+    padding: 20px;
+  }
+
+  .input-area {
+    font-size: 14px;
+  }
+
+  .btnAdicionar {
+    padding: 8px 16px;
+  }
+
+  #btnExcluir {
+    padding: 6px 12px;
+  }
+}
